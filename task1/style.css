@@ -1,0 +1,33 @@
+.theme{
+    background-image: url(images/top\ background.png);
+    width:1920px;
+    height:636px;
+
+}
+.navigation{
+    width: 1920px;
+    height: 60px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.43);
+    background-color: #383838;
+  
+    position: absolute;
+    top: 70px;
+}  
+.site_name{
+    width: 200px;
+    position: absolute;
+    height: 82px;
+    left: 375px;
+    background-color: #b297c4;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p{
+    width: 154px;
+    height: 37px;
+    font-family: 'Fjalla One', sans-serif;
+    
+    margin: 16px 23px;
+}
