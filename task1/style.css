@@ -21,13 +21,15 @@
     background-color: #b297c4;
     color: #ffffff;
     border-radius: 5px;
-    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+   font-size: 32px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.logo{
+    
 }
 
-p{
-    width: 154px;
-    height: 37px;
-    font-family: 'Fjalla One', sans-serif;
-    
-    margin: 16px 23px;
-}
+
