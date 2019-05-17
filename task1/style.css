@@ -7,6 +7,8 @@
     background-image: url(images/top\ background.png);
     width:1920px;
     height:636px;
+    display: flex;
+    justify-content: center
 
 }
 .navigation_menu{
@@ -27,7 +29,7 @@
     width: 200px;
     height: 82px;
     background-image: url(images/logo\ bg.png);
-    align-content: center;
+    align-items: center;
     justify-content: center;
     font-family: 'Fjalla One', sans-serif;
     color: #fff;
@@ -63,30 +65,28 @@
 
 
 .photo{
-    display: grid;
-    
+    position: static;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(images/Layer\ 1.png);
     width: 1170px;
     height: 467px;
-    margin: 0 auto;
-    position: relative;
-    top:189px;
+    margin-top:189px;
     
-    
+}
+.arrow_left{
+    position: absolute;
+    left: 390px;
+    top: 400px;
 }
 .arrow_right{
     position: absolute;
-    left: 20px;
-
-}
-.
+    right: 130px;
+    top: 400px;
 }
 .phrases{
     height: 365px;
-    
-    
 }
 .person{
     display: block;
@@ -94,11 +94,6 @@
   opacity: 0.4;
   font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: rgba(255, 255, 255, 0.274);
   padding-bottom: 22px;
@@ -106,15 +101,9 @@
 }
 .first_phrase{
     
-   
     font-size: 60px;
   opacity: 0.9;
   font-family:  'Fjalla One', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: rgba(255, 255, 255, 0.829);
   padding-bottom: 31px;
@@ -124,35 +113,104 @@
   font-size: 22px;
   opacity: 0.9;
   font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   text-align: center;
   color: rgba(255, 255, 255, 0.829);
   padding-bottom: 21px;
 }
 
-.border{
-    
-    
-  
-}
+
 .third_phrase{
         
   font-size: 18px;
   opacity: 0.6;
   font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 34px;
+}
 
+.info{
+    width: 1920px;
+    height: 1729px;
+   
   
+    
+    
+}
+.contacts{
+    width: 1170px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+   margin: 0 auto;
+    height: 177px;
+}
+.contacts_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0 rgba(82, 84, 77, 0.16);
+   width: 291px;
+   height: 177px;
+}
+.article{
+ 
+   width: 900px;
+   height: 920px;
+   margin-left: 375px;
+   margin-top:56px;
+
+}
+
+
+.col1{
+    align-content: center;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0 rgba(82, 84, 77, 0.16);
+    width: 270px;
+    height: 582px;
+}
+
+.column_first{
+    width: 205px;
+  height: 87px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #747474;
+}
+.pr{
+    margin-top:28px;
+    margin-bottom: 30px;;
+}
+.column_second{
+    width: 204px;
+    height: 57px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13px;
+    line-height: 1.69;
+    letter-spacing: 0.5px;
+    color: #979797;
+}
+
+.col2{
+    margin-top: 28px; 
+    align-content: center;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0 rgba(82, 84, 77, 0.16);
+    width: 270px;
+    height: 397px;
 }

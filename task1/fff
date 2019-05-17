@@ -1,132 +1,16 @@
-<div class="theme">
-      <nav class="navigation"> 
-          <ul class="site">
-              <li>SITENAME</li>
-          </ul>
-            <ul class="di">
-                <li class="menu_bar">HOME</li>
-                <li class="menu_bar">ABOUT</li>
-                <li class="menu_bar">SERVICES</li>
-                <li class="menu_bar">FOLIO</li>
-                <li class="menu_bar">CONTACT</li>
-            </ul>
-        </div>
-      </nav>
-        
-    </div>
-</body>
-</html>
+<div class="info">
+        <section class="contacts">
+            <section class="contacts_photo">
+                <img src="images/headset.png">
+            </section>
+            <section class="contacts_photo"><img src="images/swop.png"></section>
+            <section class="contacts_photo"><img src="images/clock.png"></section>
+            <section class="contacts_photo"><img src="images/message.png"></section>
+        </section>
+        <section class="article">
+            <div class="article_first_column">
+                <div class="col1"></div>
+                <div class="col1"></div>
 
-
-.theme{
-    background-image: url(images/top\ background.png);
-    width:1920px;
-    height:636px;
-
-}
-.navigation{
-    display: grid ;
-    grid-auto-flow: column; 
-   width: 1920px;
-    height: 60px;
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.43);
-    background-color: #383838;
-    position: relative;
-    top: 70px;
-    
-}  
-.site{
-    background-color: #b297c4;
-    color: #ffffff;
-    border-radius: 5px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0 auto;
-    width: 200px;
-    padding:0;
-}
-
-li{
-    
-}
-.di{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-grid;
-    grid-auto-flow:column; 
-    align-content: center;
-    
-   
-}
-.menu_bar{
-    
-    di;
-}
-
-
-
-
-
-
-
-
-
- <div class="navigation_menu">
-        <div class="site">SITENAME</div>
-        <nav>
-        <ul>
-            <li><a  class="clicked"href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-             <li><a href="#">SERVICES</a></li>
-            <li><a href="#">FOLIO</a></li>
-             <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
-    </div>
-    </div>
-
-
-
-
-
-    .navigation_menu{
-
-    position: absolute;
-    top:70px;
-    width: 1920px;
-    height: 60px;
-    margin: 0 auto;
-    background-color: #383838;
-}
-
-.site{
-    margin-left: 375px;
-    
-    
-}
-nav{
-    float: right;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 20px;
-    
-}
-nav a{
-    font-family: 'Fjalla One';
-    background-color: #444;
-    color:#fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 0px 5px 0px 5px;
-    background-color: #383838;
-}
+            </div>
+        </section>
