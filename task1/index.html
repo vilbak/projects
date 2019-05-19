@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,41 +13,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="theme">
-    <section class="navigation_menu">
-        <div class="image">sitename</div>
-        <nav>
-            <ul class = "nav_links">
-                <li class="link"><a class="clicked" href="#">home</a></li>
-                <li class="link"><a href="#">about</a></li>
-                <li class="link"><a href="#">services</a></li>
-                <li class="link"><a href="#">folio</a></li>
-                <li class="link"><a href="#">contact</li>
-            </ul>
-        </nav>
-    </section>
-
-    <div class="photo">
-        <img class="arrow_left" src="images/arrow_right.png">
-        <img class="arrow_right" src="images/arrow-left.png">
-        <section class="phrases">
-            <img src="images/person.png" alt="" class="person">
-            <p class="first_phrase"> nunc digno lorem dol</p>
-            <p class="second_phrase">vivamus vestibilum nulla</p>
-
-        <div class="border"><p class="third_phrase">laoreet ipun</p></div>
+        <section class="navigation_menu">
+            <div class="image">sitename</div>
+            <nav>
+                <ul class="nav_links">
+                    <li class="link special"><a class="clicked">home</a></li>
+                    <li class="link"><a  class="navigation__link" href="#">about</a></li>
+                    <li class="link"><a class="navigation__link"  href="#">services</a></li>
+                    <li class="link"><a  class="navigation__link" href="#">folio</a></li>
+                    <li class="link"><a  class="navigation__link" href="#">contact</li>
+                </ul>
+            </nav>
         </section>
+
+        <div class="photo">
+            <img class="arrow_left" src="images/arrow_right.png">
+
+            <section class="phrases">
+                <img src="images/person.png" alt="" class="person">
+                <p class="first_phrase"> nunc digno lorem dol</p>
+                <p class="second_phrase">vivamus vestibilum nulla</p>
+                <div class="border">
+                    <p class="third_phrase">laoreet ipun</p>
+                </div>
+            </section>
+            <img class="arrow_right" src="images/arrow-left.png">
+        </div>
     </div>
-    </div>
-        <main class="info">
+    <main class="info">
         <ul class="contacts">
             <li class="contacts_photo">
                 <img src="images/headset.png">
+                <div class="contacts__phrases">
+                    <strong class="contacts__name">ibus tortor</strong></br>
+                    <span class="contacts__info">Morbi interdum mollis </span>
+                </div>
             </li>
-            <li class="contacts_photo"><img src="images/swop.png"></li>
-            <li class="contacts_photo"><img src="images/clock.png"></li>
-            <li class="contacts_photo"><img src="images/message.png"></li>
+            <li class="contacts_photo"><img src="images/swop.png">
+                <div class="contacts__phrases">
+                    <strong class="contacts__name">aliquam</strong></br>
+                    <span class="contacts__info">Vestibulam dipbus </span>
+                </div>
+            </li>
+            <li class="contacts_photo"><img src="images/clock.png">
+                <div class="contacts__phrases">
+                    <strong class="contacts__name">Nunciden</strong></br>
+                    <span class="contacts__info">Idot crasorma elinit </span>
+                </div>
+            </li>
+            <li class="contacts_photo"><img src="images/message.png">
+                <div class="contacts__phrases">
+                    <strong class="contacts__name">egestasmod</strong></br>
+                    <span class="contacts__info">Felis moodo tortor </span>
+                </div>
+            </li>
         </ul>
         <ul class="main-list">
             <li class="main-list__article-item main-list__article-item-1">
@@ -52,11 +77,12 @@
                     <h1 class="main-list__title main-list__title-1">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
                     </h1>
-                    <img class="main-list__image main-list__image-1" src="images/Layer 2.png" >
+                    <img class="main-list__image main-list__image-1" src="images/Layer 2.png">
                     <p class="main-list__paragraph main-list__paragraph-1">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link main-list__link-1"><span class="main-list__link-text main-list__link-text-1">Read more</span></a> 
+                    <a href="#" class="main-list__link main-list__link-1"><span
+                            class="main-list__link-text main-list__link-text-1">Read more</span></a>
                 </div>
 
             </li>
@@ -65,11 +91,12 @@
                     <h1 class="main-list__title main-list__title-2">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
                     </h1>
-                    <img class="main-list__image-2 main-list__image" src="images/Layer 3.png" >
+                    <img class="main-list__image-2 main-list__image" src="images/Layer 3.png">
                     <p class="main-list__paragraph-2 main-list__paragraph">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link-2 main-list__link"><span class="main-list__link-text-2 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-2 main-list__link"><span
+                            class="main-list__link-text-2 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
@@ -77,26 +104,29 @@
             <li class="main-list__article-item-3 main-list__article-item">
                 <div class="main-list__content-wrap-3 main-list__content-wrap">
                     <h1 class="main-list__title-3 main-list__title">
-                        Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
+                            Integer vitae libero ac risus egestas risus egestas placerat
                     </h1>
-                    <img class="main-list__image-3 main-list__image" src="images/Layer 4.png" >
+                    <img class="main-list__image-3 main-list__image" src="images/Layer 4.png">
                     <p class="main-list__paragraph-3 main-list__paragraph">
-                        Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
+                            Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel ipsum dolor.
                     </p>
-                    <a href="#" class="main-list__link-3 main-list__link"><span class="main-list__link-text-3 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-3 main-list__link"><span
+                            class="main-list__link-text-3 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
             <li class="main-list__article-item-4 main-list__article-item">
                 <div class="main-list__content-wrap-4 main-list__content-wrap">
                     <h1 class="main-list__title-4 main-list__title">
-                        Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
+                       Integer vitae libero ac risus egestas modo felis quis
                     </h1>
-                    <img class="main-list__image-4 main-list__image" src="images/Screen Shot 2019-05-19 at 12.25.56 PM.png" >
+                    <img class="main-list__image-4 main-list__image"
+                        src="images/Screen Shot 2019-05-19 at 12.25.56 PM.png">
                     <p class="main-list__paragraph-4 main-list__paragraph">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link-4 main-list__link"><span class="main-list__link-text-4 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-4 main-list__link"><span
+                            class="main-list__link-text-4 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
@@ -106,11 +136,12 @@
                     <h1 class="main-list__title-5 main-list__title">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
                     </h1>
-        
+
                     <p class="main-list__paragraph-5 main-list__paragraph">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link-5 main-list__link"><span class="main-list__link-text-5 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-5 main-list__link"><span
+                            class="main-list__link-text-5 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
@@ -120,11 +151,12 @@
                     <h1 class="main-list__title-6 main-list__title">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
                     </h1>
-                    <img class="main-list__image-6 main-list__image" src="images/Layer 6.png" >
+                    <img class="main-list__image-6 main-list__image" src="images/Layer 6.png">
                     <p class="main-list__paragraph-6 main-list__paragraph">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link-6 main-list__link"><span class="main-list__link-text-6 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-6 main-list__link"><span
+                            class="main-list__link-text-6 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
@@ -134,11 +166,12 @@
                     <h1 class="main-list__title-7 main-list__title">
                         Praesent dapibus lipsum neque id cursus faucio dolor ibus torto
                     </h1>
-                    <img class="main-list__image-7 main-list__image" src="images/Layer 5.png" >
+                    <img class="main-list__image-7 main-list__image" src="images/Layer 5.png">
                     <p class="main-list__paragraph-7 main-list__paragraph">
                         Phasellus ultrices nulla quis nibh Quisque a lectus Donec con
                     </p>
-                    <a href="#" class="main-list__link-7 main-list__link"><span class="main-list__link-text-7 main-list__link-text">Read more</span></a> 
+                    <a href="#" class="main-list__link-7 main-list__link"><span
+                            class="main-list__link-text-7 main-list__link-text">Read more</span></a>
                 </div>
 
             </li>
@@ -158,36 +191,70 @@
                     <li class="main-list__article-item-9__li">Praesent placerat risus quis</li>
                 </ul>
             </li>
-             <li class="main-list__article-item-10 main-list__article-item">
-                 <h3 class=" main-list__article-item-10__header">Maooret facilies</h3>
-                 <ul class="main-list__article-item-10__ordered">
-                     <li class="main-list__article-item-10__list"><img src="images/quotes.png" class ="main-list__article-item-10__images__quotes">
+            <li class="main-list__article-item-10 main-list__article-item">
+                <h3 class=" main-list__article-item-10__header">Maooret facilies</h3>
+                <ul class="main-list__article-item-10__ordered">
+                    <li class="main-list__article-item-10__list"><img src="images/quotes.png"
+                            class="main-list__article-item-10__images__quotes">
                         <div class="main-list__article-item-10__list-section">
-                        <span class="main-list__article-item-10__title">vivamus</span>
-                        <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
+                            <span class="main-list__article-item-10__title">vivamus</span>
+                            <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
                         </div>
                     </li>
-                    <li class="main-list__article-item-10__list"><img src="images/cup.png" class ="main-list__article-item-10__images__quotes">
+                    <li class="main-list__article-item-10__list"><img src="images/cup.png"
+                            class="main-list__article-item-10__images__quotes">
                         <div class="main-list__article-item-10__list-section">
-                        <span class="main-list__article-item-10__title">vivamus</span>
-                        <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
+                            <span class="main-list__article-item-10__title">vivamus</span>
+                            <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
                         </div>
                     </li>
-                    <li class="main-list__article-item-10__list"><img src="images/bell.png" class ="main-list__article-item-10__images__quotes">
+                    <li class="main-list__article-item-10__list"><img src="images/bell.png"
+                            class="main-list__article-item-10__images__quotes">
                         <div class="main-list__article-item-10__list-section">
-                        <span class="main-list__article-item-10__title">vivamus</span>
-                        <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
+                            <span class="main-list__article-item-10__title">vivamus</span>
+                            <p class="main-list__article-item-10__paragraph">Nulla-nec-praesent-placerat-risus</p>
                         </div>
                     </li>
-                   
-                 </ul>
-             </li>
+
+                </ul>
+            </li>
 
         </ul>
-        </main>
-    </body>
-    <footer>
-        
-    </footer>
-    </html>
+    </main>
+</body>
+<footer>
+    <div class="end">
+        <div class="copyright"><strong class="end__strong">Copyright (c) <span class="end__span">2013</span></br>
+                <span class="end__span reserved">All rights reserved</span>
+            </strong>
 
+            <div class="footer__menu"><i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-pinterest-square"></i>
+                <i class="fas fa-phone-volume"></i>
+            </div>
+        </div>
+        <div class=" designed">
+            <strong class="end__strong">Designed BY (c) <span
+                    class="end__span reserved">www.alltemplatenee.com</span></strong>
+            <div class="designed__navigation">
+                <strong class="designed__navigation__paragraphs">Home :: About :: Contact</strong>
+            </div>
+
+        </div>
+        <div class=" images">
+            <strong class="end__strong">Images from <br /><span class=" end__span reserved">wallcoo.net |
+                    wallpaperswide.com</span></strong>
+
+        </div>
+        <div class=" contact">
+            <strong class="end__strong">Contact</br> <span class=" end__span reserved">info@companyname.com</span>
+            </strong>
+
+        </div>
+    </div>
+
+</footer>
+
+</html>
