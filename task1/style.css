@@ -571,82 +571,92 @@ footer {
 @media screen and (max-width: 768px) {
     .main-list {
         display: grid;
-        grid-template-areas: 
-        "search                   search"
-        "lorem__ipsilum   maoreet-facilis "
-        "lorem__ipsilum maoreet-facilis"
-        "praesent                egestas"
-        "praesent                egestas"
-        "praesent              libero-ac"
-        "praesent              libero-ac"
-        "praesent              libero-ac"
-        "cursus-faucio aliquam-tincidunt"
-        "cursus-faucio aliquam-tincidunt"
-        "lorem-ipsum-dolor integer-vitae"
-        "lorem-ipsum-dolor integer-vitae"
-        ".                 integer-vitae";
+        grid-template-areas:
+            "search                   search"
+            "lorem__ipsilum   maoreet-facilis "
+            "lorem__ipsilum maoreet-facilis"
+            "praesent                egestas"
+            "praesent                egestas"
+            "praesent              libero-ac"
+            "praesent              libero-ac"
+            "praesent              libero-ac"
+            "cursus-faucio aliquam-tincidunt"
+            "cursus-faucio aliquam-tincidunt"
+            "lorem-ipsum-dolor integer-vitae"
+            "lorem-ipsum-dolor integer-vitae"
+            ".                 integer-vitae";
 
-    
+
         width: 90%;
         margin: 0 auto;
         margin-top: 57px;
     }
-    .main-list__article-item-8{
+
+    .main-list__article-item-8 {
         width: 100%;
     }
-    .main-list__article-item{
+
+    .main-list__article-item {
         height: 100%;
         margin-top: 50px;
     }
 }
+
 @media screen and (max-width: 412px) {
     .photo {
         background-repeat: no-repeat;
         width: 100%;
         background-size: 100%;
         background-position-y: 50%;
-        }
-    .main-list {display: grid;
-        grid-template-areas:
-        "search"
-        "lorem__ipsilum   "
-        " maoreet-facilis"
-        "praesent"
-        "egestas"
-        "libero-ac"
-        "cursus-faucio"
-        "aliquam-tincidunt"
-        "lorem-ipsum-dolor"
-        " integer-vitae"
     }
-      .end{
+
+    .main-list {
+        display: grid;
+        grid-template-areas:
+            "search"
+            "lorem__ipsilum   "
+            " maoreet-facilis"
+            "praesent"
+            "egestas"
+            "libero-ac"
+            "cursus-faucio"
+            "aliquam-tincidunt"
+            "lorem-ipsum-dolor"
+            " integer-vitae"
+    }
+
+    .end {
         padding: 10px 50px;
         flex-direction: column;
         width: 100%;
-        
-      }
-      .images{
+
+    }
+
+    .images {
         padding-top: 0;
-      }
-      .contact{
+    }
+
+    .contact {
         padding-top: 0;
-      }
-      .image{
-         
-          font-size: 20px;
-      }
-      .navigation_menu{
+    }
+
+    .image {
+
+        font-size: 20px;
+    }
+
+    .navigation_menu {
         position: absolute;
         height: 60px;
         margin: 0 auto;
-        background:none;
+        background: none;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         padding: 30px 10%;
-       
+
         align-items: center;
         top: 0;
 
     }
-      }
+}
