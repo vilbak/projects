@@ -1,5 +1,5 @@
  //Task 1-A
- /*Array.prototype.ma = function (array, funcMap) {
+ Array.prototype.ma = function (array, funcMap) {
      let mapArr = [];
      for (let i = 0; i < array.length; i++) {
          let result = funcMap(array[i]);
@@ -13,7 +13,7 @@
 
  let newArr = arr.ma(arr, num => num ** 2);
 
- console.log(newArr);*/
+ console.log(newArr);
  //////////////////////////////
 
  //Task 1-Б
@@ -112,6 +112,6 @@
  
  let ratings = [2,3,1,4,5];
 
- let find = function (){
-     let max = (ratings) => ratings.reduce((curr,max) => max > curr)
+ let find = function (ratings){
+     let max = (ratings) => ratings.reduce((curr,max) => max > curr ? max)
  }
