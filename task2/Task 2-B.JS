@@ -1,4 +1,4 @@
-let Robot = function (name) {
+let defineName = function (name) {
     this.name = name;
 }
 
