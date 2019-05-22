@@ -1,10 +1,8 @@
-Array.prototype.filter = function (array, funcFilter) {
+//this 
+Array.prototype.filter = function (funcFilter) {
     let newArr = [];
-    for (let i = 0; i <array.length;i++) {
-        let result = funcFilter(array[i]);
-        if(result){
-            newArr.push(array[i]);
-        }
+    for (let i = 0; i <this.length;i++) {
+        funcFilter(this[i],i) && newArr.push(this[i]);
        
     }
     return newArr;
@@ -12,6 +10,6 @@ Array.prototype.filter = function (array, funcFilter) {
 
 let arr = [5, 6, 7, 8];
 
-let newArr = arr.filter(arr,num => num >6);
+const filteredArray = [1, 2, 3].filter(x => x > 2);
 
-console.log(newArr);
+    console.log(JSON.stringify(filteredArray) === "[3]");
