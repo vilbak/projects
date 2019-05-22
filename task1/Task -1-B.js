@@ -1,3 +1,10 @@
+Array.prototype.map = function (funcMap) {
+    let mapArr = [];
+    for (let i = 0; i < this.length; i++) {
+        mapArr.push(funcMap(this[i], i));
+    }
+    return mapArr;
+};
 let newReleases = [{
     "id": 70111470,
     "title": "Die Hard",
@@ -7,17 +14,17 @@ let newReleases = [{
     "bookmark": []
 }];
 
-let ids = (array) => {
-    let transformArray = array;
+let getId = (array) => {
+    let newArray = array;
 
-    let newArray = (element) => element.map(({
+    let transformArray = (arr) => arr.map(({
         id,
         title
     }) => ({
         id,
         title
     }))
-    return newArray(transformArray);
+    return transformArray(newArray);
 
 }
-console.log(ids(newReleases));
+console.log(getId(newReleases));
