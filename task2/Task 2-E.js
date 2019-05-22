@@ -1,4 +1,4 @@
-let Robot = function (name) {
+let defineName = function (name) {
     this.name = name;
 }
 
@@ -7,7 +7,7 @@ function add(op1, op2) {
     return this.name + " can count to " + (op1 + op2);
 }
 
-let voltron = new Robot("Voltron");
+let voltron = new defineName("Voltron");
 
 let count= add.bind(voltron);
 
