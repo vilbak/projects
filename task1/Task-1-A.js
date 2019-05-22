@@ -1,11 +1,12 @@
 
-function map(array, funcMap) {
+Array.prototype.map = function (funcMap) {
     let mapArr = [];
-    for (let i = 0; i < array.length; i++) {
-        let result = funcMap(array[i],i,array);
-        mapArr.push(result);
+    for (let i = 0; i < this.length; i++) {
+        mapArr.push(funcMap(this[i], i));
     }
     return mapArr;
 
 };
-JSON.stringify([1,2,3].map(function(x) { return x + 1; })) === [2,3,4];
+const array = [1, 2, 3].map(x => x + 1);
+
+console.log(JSON.stringify(array) === '[2,3,4]');
