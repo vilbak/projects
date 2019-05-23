@@ -1,4 +1,4 @@
-//названия 
+
 let getMaxNumber = (array) =>{
     let newArr = array;
  let filterTheArray = (arr) => (arr.reduce((max ,current) => max > current ? max : current )) ;
