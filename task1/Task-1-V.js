@@ -1,4 +1,4 @@
-//this 
+
 Array.prototype.filter = function (funcFilter) {
     let newArr = [];
     for (let i = 0; i <this.length;i++) {
