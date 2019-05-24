@@ -1,4 +1,4 @@
-let defineName = function (name) {
+/*let defineName = function (name) {
     this.name = name;
      this.alertName  = function(method){
         console.log(this.name + ' '+ method);
@@ -26,4 +26,8 @@ let outputTheName = function (name) {
 }
 let Newname = new outputTheName('Walle');
 
-console.log(name.alertName.apply(name, ['apply'])); 
+console.log(name.alertName.apply(name, ['apply'])); */
+
+function showName() {
+    setTimeout(() =>)
+}
