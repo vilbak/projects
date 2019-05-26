@@ -1,4 +1,4 @@
-
+(function () {
     let textArea = document.querySelector(".textarea");
 
     let timer;
@@ -9,3 +9,4 @@
             console.log(event.target.value);
         }, 1000)
     })
+})();
