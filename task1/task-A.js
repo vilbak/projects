@@ -3,6 +3,7 @@ Array.prototype.map = function (funcMap) {
     for (let i = 0; i < this.length; i++) {
         mapArr.push(funcMap(this[i], i));
     }
+
     return mapArr;
 
 };
