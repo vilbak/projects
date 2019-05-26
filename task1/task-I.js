@@ -23,7 +23,6 @@ let videos = [{
         "title": "Bad Boys"
     }
 ];
-
 let convertArray = (function () {
     let convert = (arr) => (
         arr.reduce((result, {
