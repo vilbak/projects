@@ -1,9 +1,4 @@
-
-
 let name = 'Walle';
-
-
-
 function showName(name) {
     this.name = name
     setTimeout(() => {
