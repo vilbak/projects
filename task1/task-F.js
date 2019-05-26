@@ -2,6 +2,7 @@ Array.prototype.reduce = function (combiner, initialValue) {
     let accumulator = initialValue || this.shift();
     for (let i = 0; i < this.length; i++) {
         accumulator = combiner(accumulator, this[i]);
+        
     }
     return accumulator;
 }
