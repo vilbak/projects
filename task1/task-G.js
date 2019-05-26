@@ -19,7 +19,6 @@ let boxarts = [{
         url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
     }
 ];
-
 const findMaxSquare = (function () {
     let getUrl = (arr) => (
         arr
