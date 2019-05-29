@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import Counter from '../views/counter/index';
+import Counter from '../views/Counter/';
 
 class CounterContainer extends React.Component {
 
@@ -12,18 +12,19 @@ class CounterContainer extends React.Component {
     }
 
     incrementCounter = () => {
-
+        const number = this.state.count;
         this.setState({
-            count: this.state.count + 1
+            count: number + 1
         });
 
     }
 
     decrementCounter = () => {
-
+        const number = this.state.count;
         this.setState({
-            count: this.state.count - 1
-        });
+            count: number - 1
+        })
+
 
     }
 
@@ -47,18 +48,11 @@ class CounterContainer extends React.Component {
         }
         resetCounter = {
             this.resetCounter
-            
-        } />
-        
+
+        }
+        />
+
     }
 }
-
-CounterContainer.propTypes = {
-    count: PropTypes.number,
-    incrementCounter: PropTypes.func,
-    decrementCounter: PropTypes.func,
-    resetCounter: PropTypes.func
-};
-
 
 export default CounterContainer;
