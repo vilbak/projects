@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import FixedContainer from  './Containers/MainElement'
-import SwithcesGroup from './Containers/subContainer'
+import FixedContainer from  './Components/MainComponent'
+import SwithcesGroup from './Components/SubComponent'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import SwitchesGroup from  '../Containers/subContainer';
-import FixedContainer from  '../Containers/MainElement';
+import SwitchesGroup from  '../Components/SubComponent';
+import FixedContainer from  '../Components/MainComponent';
 
 class Handler extends React.Component{
 
