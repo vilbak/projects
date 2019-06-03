@@ -1,6 +1,6 @@
 import React from 'react';
 import SwitchesGroup from  '../Containers/subContainer';
-import FixedContainer from  '../Containers/mainContainer';
+import FixedContainer from  '../Containers/MainElement';
 
 class Handler extends React.Component{
 
@@ -9,8 +9,21 @@ class Handler extends React.Component{
         this.state = {
             
         }
+        
     }
     topDirection = () =>{
+
+    }
+
+    leftDirection =() =>{
+
+    }
+
+    rightDirection = () =>{
+
+    }
+
+    bottomDirection = () =>{
 
     }
 }

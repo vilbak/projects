@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import FixedContainer from  './Containers/mainContainer'
+import FixedContainer from  './Containers/MainElement'
 import SwithcesGroup from './Containers/subContainer'
 
 
