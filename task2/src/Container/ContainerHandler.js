@@ -1,29 +1,42 @@
-import React from 'react';
-import SwitchesGroup from  '../Containers/subContainer';
-import FixedContainer from  '../Containers/MainElement';
+import React, { Component } from 'react';
+import SubComponent from  '../Components/SubComponent';
+import MainComponent from  '../Components/MainComponent';
 
-class Handler extends React.Component{
-
-    constructor(props){
-        super(props)
-        this.state = {
-            
+class Handler extends Component{
+    state = {
+        centerPosition: {
+            x: 0,
+            y: 0
+        },
+        mousePosition: {
+            x: 0,
+            y: 0
         }
+    } 
+
+    changeMousePositionState = mousePosition => {
+        this.setState((state, props) => { return { 
+            ...state,
+            mousePosition
+         }}, ()=> console.log(this.state))
         
-    }
-    topDirection = () =>{
 
     }
 
-    leftDirection =() =>{
+    changeCenterPositionState = centerPosition => {
+        this.setState((state, props) => { return { 
+            ...state,
+            centerPosition
+         }})
+        
 
     }
 
-    rightDirection = () =>{
-
+    render (){
+        return (<div >
+          <MainComponent changeMousePositionState={this.changeMousePositionState} changeCenterPositionState={this.changeCenterPositionState}/>
+          <SubComponent positions={this.state}/>
+          </div>)
+      }
     }
-
-    bottomDirection = () =>{
-
-    }
-}
+    export default Handler;
