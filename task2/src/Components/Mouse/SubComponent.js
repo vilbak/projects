@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import Input from '@material-ui/core/Input';
-<<<<<<< HEAD
-import   styles from './StyleComponents';
-=======
+
 import styles from './StyleComponents';
->>>>>>> 0b7a33ff8f72a02f9694f8e83489dd3eca6bfc1e
 
 
 export default class SubComponent extends Component {

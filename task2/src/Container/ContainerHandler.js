@@ -1,18 +1,7 @@
-<<<<<<< HEAD
-import React from 'react';
-import SwitchesGroup from  '../Components/SubComponent';
-import FixedContainer from  '../Components/MainComponent';
-
-class Handler extends React.Component{
-
-    constructor(props){
-        super(props)
-        this.state = {
             
-=======
 import React, { Component } from 'react';
-import SubComponent from  '../Components/SubComponent';
-import MainComponent from  '../Components/MainComponent';
+import SubComponent from  '../Components/Mouse/SubComponent';
+import MainComponent from  '../Components/Mouse/MainComponent';
 
 class Handler extends Component{
     state = {
@@ -23,7 +12,7 @@ class Handler extends Component{
         mousePosition: {
             x: 0,
             y: 0
->>>>>>> 0b7a33ff8f72a02f9694f8e83489dd3eca6bfc1e
+
         }
     } 
 
