@@ -6,19 +6,36 @@ import Box from '@material-ui/core/Box';
 import  styles from './StyleComponents';
 
 
+export default class MainComponent extends React.Component{
 
+    coordsCalc = (e) =>{
+        let width = this._box.clientWidth;
+        let height = this._box.clientHeight;
 
-let FixedContainer=()=> {
+        const centerPosition = {
+          x: width/2,
+          y:height/2
+        }
+        const mousePosition = {
+          x: e.clientX,
+          y: e.clientY
+        }
+
+        this.props.changeCenterPositionState(centerPosition)
+        this.props.changeMousePositionState(mousePosition);
+      
+    }
+  
+  render(){
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container fixed>
+      <Container  fixed>
       <Box boxShadow ={3}>
-        <Typography component="div" style = {styles.TodoComponent}/>
+        <Typography onMouseMove={this.coordsCalc} ref={box=> this._box = box} component="div" style = {styles.TodoComponent}/>
         </Box>
       </Container>
     </React.Fragment>
   );
+  }
 }
-export default FixedContainer;
-
