@@ -1,9 +1,9 @@
             
 import React, { Component } from 'react';
-import SubComponent from  '../Components/Mouse/SubComponent';
-import MainComponent from  '../Components/Mouse/MainComponent';
+import SubComponent from  '../Component/InputComponent';
+import MainComponent from  '../Component/BlockComponent';
 
-class Handler extends Component{
+class MouseOn extends Component{
     state = {
         centerPosition: {
             x: 0,
@@ -41,4 +41,4 @@ class Handler extends Component{
           </div>)
       }
     }
-    export default Handler;
+    export default MouseOn;

@@ -33,7 +33,7 @@ export default class SubComponent extends Component {
         inputProps={{
           'aria-label': 'Description',
         }}
-        disabled={this.props.positions.mousePosition.x >= this.props.positions.centerPosition.x}
+        disabled={this.props.positions.mousePosition.x <= this.props.positions.centerPosition.x}
       />
       <Input
         value="Left"
@@ -41,7 +41,7 @@ export default class SubComponent extends Component {
         inputProps={{
           'aria-label': 'Description',
         }}
-        disabled={this.props.positions.mousePosition.x <= this.props.positions.centerPosition.x}
+        disabled={this.props.positions.mousePosition.x >= this.props.positions.centerPosition.x}
       />
     <br/>
     Center: x {this.props.positions.centerPosition.x} y{this.props.positions.centerPosition.y}
