@@ -3,20 +3,24 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavigationMenu from './Handlers/index';
 import About from './Components/Pages/About/';
 import Mouse from './Components/Pages/Mouse/';
-import NotFound from './Components/Pages/NotFound/'
-
+import NotFound from './Components/Pages/NotFound/';
+import Login from './Components/Pages/Login/';
+import "./App.css"
 const RouterApp =()=>{
     return(
 
         <Router>
-        <NavigationMenu/>
-        <Switch>
-        <Route exact path ='/' />
-        <Route path ='/about' component ={About}/>
-        <Route path ='/mouseOn' component ={Mouse}/>
-        <Route component ={NotFound}/>
+            <NavigationMenu/>
+                <div className='container'>
+            <Switch>
+                <Route exact path ='/' />
+                <Route path ='/login' component ={Login}/>
+                <Route path ='/about' component ={About}/>
+                <Route path ='/mouseOn' component ={Mouse}/>
+                <Route component ={NotFound}/>
 
-        </Switch>
+            </Switch>
+                </div>
         </Router>
     )
 }
