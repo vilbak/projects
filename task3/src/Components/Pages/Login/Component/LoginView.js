@@ -9,7 +9,7 @@ const LoginView = (props) => {
     return (
           <form className={classes.container} onSubmit={props.handleSubmit}>
           <TextField 
-          value={props.value}
+          value={props.email}
           onChange ={props.handleChange}
         id="filled-email-input"
         label="Email"
@@ -21,7 +21,7 @@ const LoginView = (props) => {
       />
 
            <TextField
-           value={props.value}
+           value={props.password}
            onChange ={props.handleChange}
            name="password"
         id="filled-password-input"
@@ -31,7 +31,7 @@ const LoginView = (props) => {
         margin="normal"
         variant="filled"
         className=''/>
-      <Button  positioned ='centered'type='submit'>Login</Button>
+      <Button disabled={!!props.errors.password} positioned ='centered'type='submit'>Login</Button>
 
           </form>
       
