@@ -33,8 +33,8 @@ class LoginContainer extends React.Component {
       e.preventDefault();
       if (this.state.password.length >= 6 && this.state.email.length >= 6) {
         console.log(`E-mail: ${this.state.email}  Password: ${this.state.password}`);
-        console.log(JSON.stringify(this.state.email));
-        console.log(JSON.stringify(this.state.password));
+        console.log(this.state.email);
+        console.log(this.state.password);
         this.setState(
           this.initialState,
 

@@ -6,8 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import styles from './StyleComponents';
 
+import styles from './StyleComponents';
 
 export default class MainComponent extends React.Component {
     coordsCalc = (e) => {

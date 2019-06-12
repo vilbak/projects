@@ -15,6 +15,7 @@ module.exports = {
     "react/forbid-prop-types": [0],
     "react/require-default-props": [0],
     "global-require": [0],
-    "no-underscore-dangle": [0]
+    "no-underscore-dangle": [0],
+    "linebreak-style": 0
   }
 }
